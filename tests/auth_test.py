@@ -1,4 +1,9 @@
+import pytest
+from flask import g
+from flask import session
+
 """This test the homepage"""
+
 
 def test_request_main_menu_links(client):
     """This makes the index page"""
@@ -16,7 +21,7 @@ def test_auth_pages(client):
     response = client.get("/login")
     assert response.status_code == 200
     
-    def test_register(client, app):
+def test_register(client, app):
     # test that viewing the page renders without template errors
     assert client.get("/auth/register").status_code == 200
 
