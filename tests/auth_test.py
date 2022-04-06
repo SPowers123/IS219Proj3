@@ -1,9 +1,10 @@
 import pytest
-from flask import g
+import flask_wtf
+import flask_login
 from flask import session
+from app.db.models import User
 
 """This test the homepage"""
-
 
 def test_request_main_menu_links(client):
     """This makes the index page"""
@@ -20,7 +21,7 @@ def test_auth_pages(client):
     assert response.status_code == 200
     response = client.get("/login")
     assert response.status_code == 200
-    
+
 # Password Confirmation - Unit Test 4
 def test_register_matchingPasswords(client):
     #Test that mismatching passwords are correctly handled
