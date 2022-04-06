@@ -26,10 +26,10 @@ def test_auth_pages(client):
 def test_register_matchingPasswords(client):
     #Test that mismatching passwords are correctly handled
     response = client.post("/register", data={"email": "admin@mail.com", "password": "a", "confirm": ""})
-    assert b"Passwords must match" in response.data
+    assert b'Passwords must match' in response.data
     # Test that mismatching passwords are correctly handled even if the field is not empty
     response = client.post("/register", data={"email": "admin@mail.com", "password": "a", "confirm": "b"})
-    assert b"Passwords must match" in response.data
+    assert b'Passwords must match' in response.data
 
 # Successful Registration - Unit Test 8
 def test_register(client):
