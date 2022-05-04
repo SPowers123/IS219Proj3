@@ -2,12 +2,12 @@
 
 [![Production Workflow](https://github.com/SPowers123/IS219Proj3/actions/workflows/prod.yml/badge.svg)](https://github.com/SPowers123/IS219Proj3/actions/workflows/prod.yml)
 
-* [Production Deployment](https://proj3-development.herokuapp.com/)
+* [Production Deployment](https://proj3v2-development.herokuapp.com/)
 
 
 [![Development Workflow](https://github.com/SPowers123/IS219Proj3/actions/workflows/dev.yml/badge.svg)](https://github.com/SPowers123/IS219Proj3/actions/workflows/dev.yml)
 
-* [Developmental Deployment](https://proj3-production.herokuapp.com/)
+* [Developmental Deployment](https://proj3v2-production.herokuapp.com/)
 
 ## Setting up CI/CD
 
